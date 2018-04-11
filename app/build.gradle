@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
     buildToolsVersion "27.0.3"
     defaultConfig {
         applicationId "serg.apps.cellmonitor"
@@ -17,14 +17,63 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+ext {
+    support_version = '27.0.2'
+    joda_time_version = '2.9.9.1'
+    retrofit_version = '2.3.0'
+    moxy_version = '1.5.3'
+    dagger_version = '2.9'
+    butter_knife_version = '8.8.1'
+    picasso_version = '2.5.2'
+    picasso_okhttp3_version = '1.1.0'
+    picasso_transformations = '2.1.2'
+    cicerone_version = '2.1.0'
+    play_services_version = '11.8.0'
+    realm_adapters_version = '2.1.1'
+    rx_android_version = '2.0.1'
+    firebase_version = '11.8.0'
+    parceler_version = '1.1.9'
+    quickblox_version = '3.4.1'
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation "com.android.support:appcompat-v7:$support_version"
+    implementation "com.android.support:design:$support_version"
+    implementation "com.android.support:cardview-v7:$support_version"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0-beta5'
+
+    //moxy
+    implementation "com.arello-mobile:moxy:$moxy_version"
+    implementation "com.arello-mobile:moxy-android:$moxy_version"
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    annotationProcessor "com.arello-mobile:moxy-compiler:$moxy_version"
+    implementation "com.arello-mobile:moxy-app-compat:$moxy_version"
+    //dagger
+    implementation "com.google.dagger:dagger:$dagger_version"
+    annotationProcessor "com.google.dagger:dagger-compiler:$dagger_version"
+    //butter knife
+    implementation "com.jakewharton:butterknife:$butter_knife_version"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butter_knife_version"
+    //cicerone
+    implementation "ru.terrakok.cicerone:cicerone:$cicerone_version"
+    //parceler
+    implementation "org.parceler:parceler-api:$parceler_version"
+    annotationProcessor "org.parceler:parceler:$parceler_version"
+    //google play services
+    implementation "com.google.firebase:firebase-core:$firebase_version"
+    implementation "com.google.firebase:firebase-messaging:$firebase_version"
+    implementation "com.google.android.gms:play-services-vision:$play_services_version"
+    implementation "com.google.android.gms:play-services-location:$play_services_version"
+
+    //tests
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }

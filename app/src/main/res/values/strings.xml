@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CellMonitor</string>
+    <string name="SYS_ATTENTION">Attention!</string>
+    <string name="SYS_PROCEED">Continue</string>
+    <string name="unable_locate">Unable to determine location</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="enable_location">Please enable location in system settings</string>
 </resources>

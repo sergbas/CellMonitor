@@ -1,7 +1,9 @@
-package serg.apps.cellmonitor;
+package serg.apps.cellmonitor.ui.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import serg.apps.cellmonitor.R;
 
 public class MainActivity extends AppCompatActivity {
 
