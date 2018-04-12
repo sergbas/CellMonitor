@@ -7,6 +7,7 @@ import serg.apps.cellmonitor.di.module.ContextModule;
 import serg.apps.cellmonitor.di.module.GooglePlayServicesModule;
 import serg.apps.cellmonitor.di.module.LocationModule;
 import serg.apps.cellmonitor.di.module.PreferencesModule;
+import serg.apps.cellmonitor.presentation.presenter.LoginPresenter;
 import serg.apps.cellmonitor.presentation.presenter.MainPresenter;
 import serg.apps.cellmonitor.presentation.presenter.MainScreenPresenter;
 import serg.apps.cellmonitor.presentation.presenter.base.BasePresenterWrapper;
@@ -32,6 +33,8 @@ public interface AppDaggerComponent {
 
     //presenters for activity
     void inject(MainPresenter mainPresenter);
+    void inject(LoginPresenter loginPresenter);
+
 
     //presenters for fragments
     void inject(MainScreenPresenter mainScreenPresenter);

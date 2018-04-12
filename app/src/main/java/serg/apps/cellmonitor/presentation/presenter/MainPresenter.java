@@ -2,6 +2,7 @@ package serg.apps.cellmonitor.presentation.presenter;
 
 import com.arellomobile.mvp.InjectViewState;
 
+import serg.apps.cellmonitor.R;
 import serg.apps.cellmonitor.presentation.presenter.base.BaseNavigationPresenter;
 import serg.apps.cellmonitor.presentation.view.MainView;
 import serg.apps.cellmonitor.ui.Screens;
@@ -18,7 +19,7 @@ public class MainPresenter extends BaseNavigationPresenter<MainView> {
     public void init() {
         if (!initialized) {
             getRouter().newRootScreen(Screens.MAIN_FORM);
-            //getViewState().setSelectedBottomMenuItem(R.id.main);
+            getViewState().setSelectedBottomMenuItem(R.id.main);
             initialized = true;
         }
     }

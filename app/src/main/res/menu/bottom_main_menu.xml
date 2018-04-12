@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/main"
-        android:title="@string/SYS.MAIN_PAGE"
-        android:icon="@drawable/home" />
+        android:title="MAIN_PAGE"
+        android:icon="@drawable/common_full_open_on_phone" />
 
-    <item android:id="@+id/prescriptions"
-        android:title="@string/SYS.PRESCRIPTIONS"
-        android:icon="@drawable/assignment" />
-
-    <item
-        android:id="@+id/measurements"
-        android:title="@string/SYS.MEASUREMENTS"
-        android:icon="@drawable/index" />
-
-    <item android:id="@+id/complaints"
-        android:title="@string/SYS.COMPLAINTS"
-        android:icon="@drawable/complain" />
-
-    <item android:id="@+id/questionnaire"
-        android:title="@string/SYS.QUESTIONNAIRE"
-        android:icon="@drawable/questionnaire" />
 </menu>

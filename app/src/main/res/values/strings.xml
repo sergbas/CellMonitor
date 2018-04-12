@@ -5,4 +5,5 @@
     <string name="unable_locate">Unable to determine location</string>
     <string name="unknown_error">Unknown error</string>
     <string name="enable_location">Please enable location in system settings</string>
+    <string name="title_activity_login">LoginActivity</string>
 </resources>
