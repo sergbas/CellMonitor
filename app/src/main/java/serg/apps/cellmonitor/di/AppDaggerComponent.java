@@ -5,7 +5,9 @@ import javax.inject.Singleton;
 import dagger.Component;
 import serg.apps.cellmonitor.di.module.ContextModule;
 import serg.apps.cellmonitor.di.module.GooglePlayServicesModule;
+import serg.apps.cellmonitor.di.module.LocationModule;
 import serg.apps.cellmonitor.di.module.PreferencesModule;
+import serg.apps.cellmonitor.presentation.presenter.MainPresenter;
 import serg.apps.cellmonitor.presentation.presenter.MainScreenPresenter;
 import serg.apps.cellmonitor.presentation.presenter.base.BasePresenterWrapper;
 
@@ -18,7 +20,9 @@ import serg.apps.cellmonitor.presentation.presenter.base.BasePresenterWrapper;
 //        ServerModule.class,
 //        NetworkModule.class,
         GooglePlayServicesModule.class,
-         })
+        LocationModule.class
+})
+
 @Singleton
 public interface AppDaggerComponent {
 
@@ -27,7 +31,7 @@ public interface AppDaggerComponent {
 //    void inject(BaseApiWrapper baseApiWrapper);
 
     //presenters for activity
-//    void inject(LoginPresenter loginPresenter);
+    void inject(MainPresenter mainPresenter);
 
     //presenters for fragments
     void inject(MainScreenPresenter mainScreenPresenter);

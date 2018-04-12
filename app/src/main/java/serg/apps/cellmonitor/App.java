@@ -37,8 +37,6 @@ public class App extends Application {
         return instance.getApplicationContext();
     }
 
-    private static final String QB_CONFIG_DEFAULT_FILE_NAME = "qb_config.json";
-
     @Override
     public void onCreate() {
         instance = this;
@@ -58,7 +56,7 @@ public class App extends Application {
 //                .serverModule(new ServerModule())
 //                .networkModule(new NetworkModule())
                 .googlePlayServicesModule(new GooglePlayServicesModule())
-                //.locationModule(new LocationModule())
+                .locationModule(new LocationModule())
                 .build();
     }
 

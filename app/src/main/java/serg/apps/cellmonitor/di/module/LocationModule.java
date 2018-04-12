@@ -16,12 +16,10 @@ import serg.apps.cellmonitor.component.LocationComponent;
 
 @Module
 public class LocationModule {
-
     @Provides
     @NonNull
     @Singleton
     LocationComponent provideLocationComponent(@NonNull Context context, @NonNull GooglePlayServicesComponent googlePlayServicesComponent) {
         return new LocationComponent(context, googlePlayServicesComponent);
     }
-
 }
