@@ -28,29 +28,4 @@ public class MainPresenter extends BaseNavigationPresenter<MainView> {
         getRouter().navigateTo(Screens.MAIN_FORM);
     }
 
-    public void onBottomMenuClickItem_Prescriptions() {
-        getRouter().navigateTo(Screens.PRESCRIPTIONS);
-    }
-
-    public void onBottomMenuClickItem_Measurements() {
-        getRouter().navigateTo(Screens.MEASUREMENTS);
-    }
-
-    public void onBottomMenuClickItem_Complaints() {
-        getRouter().navigateTo(Screens.COMPLAINTS);
-    }
-
-    public void onBottomMenuClickItem_Questionnaire() {
-        getRouter().navigateTo(Screens.INQUIRER);
-    }
-
-    public void onProfileImageClick_Profile(){
-        getRouter().navigateTo(Screens.PROFILE_FORM);
-    }
-
-    public void onBottomMenuClickItem_Diary() {
-        getRouter().navigateTo(Screens.DIARY_FORM);
-    }
-
-
 }

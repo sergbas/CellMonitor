@@ -15,16 +15,4 @@ public interface MainScreenView extends MvpView {
     void showErrorToast(Integer errorRsId, String errorMessage);
 
     void loadScreenData();
-
-    void showProfileScreen();
-
-    void toggleIndexDetails();
-
-    @StateStrategyType(AddToEndSingleStrategy.class)
-    void toggleIndexDetails(boolean showDetails);
-
-    @StateStrategyType(AddToEndSingleStrategy.class)
-    void toggleTasksDetails(boolean showDetails);
-
-
 }

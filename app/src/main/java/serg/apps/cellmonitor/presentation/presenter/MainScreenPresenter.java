@@ -16,29 +16,12 @@ import serg.apps.cellmonitor.presentation.view.MainScreenView;
 @InjectViewState
 public class MainScreenPresenter extends BaseNavigationPresenter<MainScreenView> {
 
-//    @Inject
-//    NetworkComponent networkComponent;
-
     public MainScreenPresenter() {
         App.getAppDaggerComponent().inject(this);
     }
 
     public void loadScreenData(boolean checkConnection) {
-  /*      if (checkConnection && !networkComponent.isConnected()) {
-            getViewState().showErrorToast(R.string.SYS_NOTE_NO_INTERNET, null);
-        }
-*/        getViewState().loadScreenData();
+        getViewState().loadScreenData();
     }
 
-    public void onClick_Avatar() {
-        getViewState().showProfileScreen();
-    }
-
-    public void onClick_Index(boolean showDetails) {
-        getViewState().toggleIndexDetails(showDetails);
-    }
-
-    public void onClick_Tasks(boolean showDetails) {
-        getViewState().toggleTasksDetails(showDetails);
-    }
 }

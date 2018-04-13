@@ -68,24 +68,5 @@ public class MainScreenFragment extends MvpAppCompatFragment implements MainScre
     public void loadScreenData() {
 
     }
-
-    @Override
-    public void showProfileScreen() {
-
-    }
-
-    @Override
-    public void toggleIndexDetails() {
-
-    }
-
-    @Override
-    public void toggleIndexDetails(boolean showDetails) {
-
-    }
-
-    @Override
-    public void toggleTasksDetails(boolean showDetails) {
-
-    }
+    
 }

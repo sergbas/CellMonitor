@@ -7,10 +7,6 @@ import serg.apps.cellmonitor.App;
  */
 
 public class BasePresenterWrapper {
-
-//    @Inject
-//    RealmComponent realmComponent;
-
     public BasePresenterWrapper() {
         App.getAppDaggerComponent().inject(this);
     }
