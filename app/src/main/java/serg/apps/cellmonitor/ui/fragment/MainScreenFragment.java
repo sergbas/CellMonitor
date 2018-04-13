@@ -3,9 +3,6 @@ package serg.apps.cellmonitor.ui.fragment;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -68,5 +65,5 @@ public class MainScreenFragment extends MvpAppCompatFragment implements MainScre
     public void loadScreenData() {
 
     }
-    
+
 }
