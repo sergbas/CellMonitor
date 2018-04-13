@@ -20,7 +20,6 @@ import serg.apps.cellmonitor.presentation.view.MainScreenView;
 
 public class MainScreenFragment extends MvpAppCompatFragment implements MainScreenView {
 
-
     private static final String TAG = MainScreenFragment.class.getSimpleName();
 
     @Override
@@ -39,10 +38,8 @@ public class MainScreenFragment extends MvpAppCompatFragment implements MainScre
 
         assert getActivity() != null;
         //((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
-
         //swipe.setOnRefreshListener(() -> mainScreenPresenter.loadScreenData(true));
         //swipe.setColorSchemeColors(getResources().getColor(R.color.accent, null));
-
         //loadAnimations();
 
         return view;
